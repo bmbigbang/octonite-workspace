@@ -50,7 +50,7 @@ jobs:
         run: npx nx build @bmbigbang/ui-react
 
       - name: Publish to GitHub Packages
-        run: npm publish ./dist/libs/@bmbigbang/ui-react
+        run: npm publish ./libs/ui-react/dist
         env:
           # This is the secret GitHub automatically provides
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
