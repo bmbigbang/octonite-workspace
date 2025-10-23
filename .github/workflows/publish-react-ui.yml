@@ -11,8 +11,10 @@ permissions:
   contents: read
 
 jobs:
-  main:
+  publish:
     runs-on: ubuntu-latest
+    permissions:
+      packages: write
     steps:
       - uses: actions/checkout@v4
         with:
