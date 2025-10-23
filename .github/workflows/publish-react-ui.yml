@@ -47,7 +47,7 @@ jobs:
         if: always()
 
       - name: Build Publishable Library
-        run: nx build @bmbigbang/ui-react
+        run: npx nx build @bmbigbang/ui-react
 
       - name: Publish to GitHub Packages
         run: npm publish ./dist/libs/@bmbigbang/ui-react
